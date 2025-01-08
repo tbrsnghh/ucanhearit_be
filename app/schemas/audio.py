@@ -18,7 +18,8 @@ class AudioCreate(BaseModel):
 class AudioData(BaseModel):
     id: int
     name: str
-    description: Optional[str]
+    description: Optional[str] = None
+    path: str
 
     class Config:
         from_attributes = True
